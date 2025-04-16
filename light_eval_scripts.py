@@ -63,12 +63,19 @@ pipeline_params = PipelineParameters(
 )
 
 
-# model_name = "ISTA-DASLab/Llama-3.1-8B-Instruct-HIGGS-4bit"
 # model_name = "mobiuslabsgmbh/Llama-3.1-8B-Instruct_4bitgs64_hqq_hf"
 # model_name = "VPTQ-community/Meta-Llama-3.1-8B-Instruct-v12-k65536-4096-woft"
 # model_name = "meta-llama/Llama-3.1-8B-Instruct"
 # model_name = "ISTA-DASLab/Meta-Llama-3.1-8B-Instruct-AQLM-PV-2Bit-1x16-hf"
-model_name = "meta-llama/Llama-3.1-70B-Instruct"
+# model_name = "hugging-quants/Meta-Llama-3.1-8B-Instruct-GPTQ-INT4"
+# model_name = "neuralmagic/Meta-Llama-3.1-8B-Instruct-quantized.w8a16"
+# model_name = "neuralmagic/Meta-Llama-3.1-8B-Instruct-FP8"
+
+# model_name = "meta-llama/Llama-3.1-70B-Instruct"
+# model_name = "hugging-quants/Meta-Llama-3.1-70B-Instruct-AWQ-INT4"
+# model_name = "hugging-quants/Meta-Llama-3.1-70B-Instruct-GPTQ-INT4"
+# model_name = "ISTA-DASLab/Meta-Llama-3.1-70B-Instruct-AQLM-PV-2Bit-1x16"
+# model_name = "VPTQ-community/Meta-Llama-3.1-70B-Instruct-v16-k65536-65536-woft"
 
 config = {
     "base_params": {

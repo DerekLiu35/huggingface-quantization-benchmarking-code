@@ -1,0 +1,384 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "override_batch_size": 16,
+    "max_samples": null,
+    "job_id": 0,
+    "start_time": 194634.568664501,
+    "end_time": 215814.584367534,
+    "total_evaluation_time_secondes": "21180.015703032986",
+    "model_name": "ISTA-DASLab/Meta-Llama-3.1-70B-Instruct-AQLM-PV-2Bit-1x16",
+    "model_sha": "d98577b240ab51fccb1dbe3575d7c9dab6ad887c",
+    "model_dtype": null,
+    "model_size": "20.41 GB"
+  },
+  "results": {
+    "leaderboard|arc:challenge|25": {
+      "acc": 0.636518771331058,
+      "acc_stderr": 0.014056207319068283,
+      "acc_norm": 0.6749146757679181,
+      "acc_norm_stderr": 0.013688147309729124
+    },
+    "leaderboard|hellaswag|10": {
+      "acc": 0.6401115315674168,
+      "acc_stderr": 0.004789865379084517,
+      "acc_norm": 0.847540330611432,
+      "acc_norm_stderr": 0.003587312328180715
+    },
+    "leaderboard|truthfulqa:mc|0": {
+      "truthfulqa_mc1": 0.390452876376989,
+      "truthfulqa_mc1_stderr": 0.017078230743431448,
+      "truthfulqa_mc2": 0.5705706768783095,
+      "truthfulqa_mc2_stderr": 0.014998562059971096
+    },
+    "leaderboard|winogrande|5": {
+      "acc": 0.8066298342541437,
+      "acc_stderr": 0.011099796645920524
+    },
+    "leaderboard|gsm8k|5": {
+      "qem": 0.000758150113722517,
+      "qem_stderr": 0.000758150113722526
+    },
+    "all": {
+      "acc": 0.6944200457175396,
+      "acc_stderr": 0.009981956448024442,
+      "acc_norm": 0.761227503189675,
+      "acc_norm_stderr": 0.00863772981895492,
+      "truthfulqa_mc1": 0.390452876376989,
+      "truthfulqa_mc1_stderr": 0.017078230743431448,
+      "truthfulqa_mc2": 0.5705706768783095,
+      "truthfulqa_mc2_stderr": 0.014998562059971096,
+      "qem": 0.000758150113722517,
+      "qem_stderr": 0.000758150113722526
+    }
+  },
+  "versions": {
+    "leaderboard|arc:challenge|25": 0,
+    "leaderboard|gsm8k|5": 0,
+    "leaderboard|hellaswag|10": 0,
+    "leaderboard|truthfulqa:mc|0": 0,
+    "leaderboard|winogrande|5": 0
+  },
+  "config_tasks": {
+    "leaderboard|arc:challenge": {
+      "name": "arc:challenge",
+      "prompt_function": "arc",
+      "hf_repo": "ai2_arc",
+      "hf_subset": "ARC-Challenge",
+      "metric": [
+        {
+          "metric_name": "acc",
+          "higher_is_better": true,
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        },
+        {
+          "metric_name": "acc_norm",
+          "higher_is_better": true,
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train",
+        "test"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": "random_sampling_from_train",
+      "generation_size": 1,
+      "generation_grammar": null,
+      "stop_sequence": [
+        "\n"
+      ],
+      "num_samples": null,
+      "suite": [
+        "leaderboard",
+        "arc"
+      ],
+      "original_num_docs": 1172,
+      "effective_num_docs": 1172,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    },
+    "leaderboard|gsm8k": {
+      "name": "gsm8k",
+      "prompt_function": "gsm8k",
+      "hf_repo": "gsm8k",
+      "hf_subset": "main",
+      "metric": [
+        {
+          "metric_name": "qem",
+          "higher_is_better": true,
+          "category": "3",
+          "use_case": "5",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train",
+        "test"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "test"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": "random_sampling_from_train",
+      "generation_size": 256,
+      "generation_grammar": null,
+      "stop_sequence": [
+        "Question=",
+        "Question",
+        "="
+      ],
+      "num_samples": null,
+      "suite": [
+        "leaderboard"
+      ],
+      "original_num_docs": 1319,
+      "effective_num_docs": 1319,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    },
+    "leaderboard|hellaswag": {
+      "name": "hellaswag",
+      "prompt_function": "hellaswag_harness",
+      "hf_repo": "hellaswag",
+      "hf_subset": "default",
+      "metric": [
+        {
+          "metric_name": "acc",
+          "higher_is_better": true,
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        },
+        {
+          "metric_name": "acc_norm",
+          "higher_is_better": true,
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train",
+        "test",
+        "validation"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "validation"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": "random_sampling_from_train",
+      "generation_size": -1,
+      "generation_grammar": null,
+      "stop_sequence": [
+        "\n"
+      ],
+      "num_samples": null,
+      "suite": [
+        "leaderboard"
+      ],
+      "original_num_docs": 10042,
+      "effective_num_docs": 10042,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    },
+    "leaderboard|truthfulqa:mc": {
+      "name": "truthfulqa:mc",
+      "prompt_function": "truthful_qa_multiple_choice",
+      "hf_repo": "truthful_qa",
+      "hf_subset": "multiple_choice",
+      "metric": [
+        {
+          "metric_name": [
+            "truthfulqa_mc1",
+            "truthfulqa_mc2"
+          ],
+          "higher_is_better": {
+            "truthfulqa_mc1": true,
+            "truthfulqa_mc2": true
+          },
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "truthfulqa_mc_metrics",
+          "corpus_level_fn": {
+            "truthfulqa_mc1": "mean",
+            "truthfulqa_mc2": "mean"
+          }
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "validation"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "validation"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": -1,
+      "generation_grammar": null,
+      "stop_sequence": [
+        "\n"
+      ],
+      "num_samples": null,
+      "suite": [
+        "leaderboard"
+      ],
+      "original_num_docs": 817,
+      "effective_num_docs": 817,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    },
+    "leaderboard|winogrande": {
+      "name": "winogrande",
+      "prompt_function": "winogrande",
+      "hf_repo": "winogrande",
+      "hf_subset": "winogrande_xl",
+      "metric": [
+        {
+          "metric_name": "acc",
+          "higher_is_better": true,
+          "category": "8",
+          "use_case": "1",
+          "sample_level_fn": "compute",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train",
+        "test",
+        "validation"
+      ],
+      "trust_dataset": true,
+      "evaluation_splits": [
+        "validation"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": "random_sampling",
+      "generation_size": -1,
+      "generation_grammar": null,
+      "stop_sequence": [
+        "\n"
+      ],
+      "num_samples": null,
+      "suite": [
+        "leaderboard"
+      ],
+      "original_num_docs": 1267,
+      "effective_num_docs": 1267,
+      "must_remove_duplicate_docs": false,
+      "version": 0
+    }
+  },
+  "summary_tasks": {
+    "leaderboard|arc:challenge|25": {
+      "hashes": {
+        "hash_examples": "17b0cae357c0259e",
+        "hash_full_prompts": "045cbb916e5145c6",
+        "hash_input_tokens": "084c6f6667f81b7b",
+        "hash_cont_tokens": "3382dc5dc1b45ff4"
+      },
+      "truncated": 0,
+      "non_truncated": 1172,
+      "padded": 4686,
+      "non_padded": 1,
+      "effective_few_shots": 25.0,
+      "num_truncated_few_shots": 0
+    },
+    "leaderboard|hellaswag|10": {
+      "hashes": {
+        "hash_examples": "31985c805c3a737e",
+        "hash_full_prompts": "fb29e0ca629fe078",
+        "hash_input_tokens": "8ba5fa1af3438966",
+        "hash_cont_tokens": "c8f698fd8a278b2b"
+      },
+      "truncated": 0,
+      "non_truncated": 10042,
+      "padded": 39973,
+      "non_padded": 195,
+      "effective_few_shots": 10.0,
+      "num_truncated_few_shots": 0
+    },
+    "leaderboard|truthfulqa:mc|0": {
+      "hashes": {
+        "hash_examples": "36a6d90e75d92d4a",
+        "hash_full_prompts": "36a6d90e75d92d4a",
+        "hash_input_tokens": "c74be084de612e94",
+        "hash_cont_tokens": "a8fe4ca9b39d583c"
+      },
+      "truncated": 0,
+      "non_truncated": 817,
+      "padded": 9996,
+      "non_padded": 0,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    },
+    "leaderboard|winogrande|5": {
+      "hashes": {
+        "hash_examples": "087d5d1a1afd4c7b",
+        "hash_full_prompts": "e0bb3cac43f294b2",
+        "hash_input_tokens": "b89070c95982a688",
+        "hash_cont_tokens": "8d49f36e3ab852d2"
+      },
+      "truncated": 0,
+      "non_truncated": 1267,
+      "padded": 2534,
+      "non_padded": 0,
+      "effective_few_shots": 5.0,
+      "num_truncated_few_shots": 0
+    },
+    "leaderboard|gsm8k|5": {
+      "hashes": {
+        "hash_examples": "0ed016e24e7512fd",
+        "hash_full_prompts": "41d55e83abc0e02d",
+        "hash_input_tokens": "dfffaba7f4fa21e4",
+        "hash_cont_tokens": "e5e672af7df42c83"
+      },
+      "truncated": 1319,
+      "non_truncated": 0,
+      "padded": 1319,
+      "non_padded": 0,
+      "effective_few_shots": 5.0,
+      "num_truncated_few_shots": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "1e2528a6610fcf49",
+      "hash_full_prompts": "f3612958c4e3eb55",
+      "hash_input_tokens": "168e0ba22526ec39",
+      "hash_cont_tokens": "6cbb908378097e0c"
+    },
+    "truncated": 1319,
+    "non_truncated": 13298,
+    "padded": 58508,
+    "non_padded": 196,
+    "num_truncated_few_shots": 0
+  }
+}
