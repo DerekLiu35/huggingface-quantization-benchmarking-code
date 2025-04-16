@@ -1,0 +1,99 @@
+name: llama_torchao_int4wo
+backend:
+  name: pytorch
+  version: 2.4.1
+  _target_: optimum_benchmark.backends.pytorch.backend.PyTorchBackend
+  model: meta-llama/Llama-3.1-8B-Instruct
+  processor: null
+  task: null
+  library: null
+  model_type: null
+  device: null
+  device_ids: null
+  seed: 42
+  inter_op_num_threads: null
+  intra_op_num_threads: null
+  model_kwargs: {}
+  processor_kwargs: {}
+  no_weights: false
+  device_map: null
+  torch_dtype: null
+  eval_mode: true
+  to_bettertransformer: false
+  low_cpu_mem_usage: null
+  attn_implementation: null
+  cache_implementation: null
+  autocast_enabled: false
+  autocast_dtype: null
+  torch_compile: false
+  torch_compile_target: forward
+  torch_compile_config: {}
+  quantization_scheme: torchao
+  quantization_config:
+    quant_type: int4_weight_only
+    group_size: 128
+  deepspeed_inference: false
+  deepspeed_inference_config: {}
+  peft_type: null
+  peft_config: {}
+scenario:
+  name: inference
+  _target_: optimum_benchmark.scenarios.inference.scenario.InferenceScenario
+  iterations: 10
+  duration: 10
+  warmup_runs: 10
+  input_shapes:
+    batch_size: 1
+    sequence_length: 64
+  new_tokens: null
+  memory: true
+  latency: true
+  energy: false
+  forward_kwargs: {}
+  generate_kwargs:
+    max_new_tokens: 64
+    min_new_tokens: 64
+    do_sample: false
+    num_beams: 1
+  call_kwargs: {}
+launcher:
+  name: process
+  _target_: optimum_benchmark.launchers.process.launcher.ProcessLauncher
+  device_isolation: true
+  device_isolation_action: warn
+  numactl: false
+  numactl_kwargs: {}
+  start_method: spawn
+environment:
+  cpu: ' AMD EPYC 7742 64-Core Processor'
+  cpu_count: 128
+  cpu_ram_mb: 540671.6928
+  system: Linux
+  machine: x86_64
+  platform: Linux-5.4.0-166-generic-x86_64-with-glibc2.31
+  processor: x86_64
+  python_version: 3.11.11
+  gpu:
+  - NVIDIA A100-SXM4-80GB
+  - NVIDIA A100-SXM4-80GB
+  - NVIDIA A100-SXM4-80GB
+  - NVIDIA DGX Display
+  - NVIDIA A100-SXM4-80GB
+  gpu_count: 5
+  gpu_vram_mb: 347892350976
+  optimum_benchmark_version: 0.5.0
+  optimum_benchmark_commit: null
+  transformers_version: 4.47.1
+  transformers_commit: null
+  accelerate_version: 1.4.0
+  accelerate_commit: null
+  diffusers_version: null
+  diffusers_commit: null
+  optimum_version: 1.24.0
+  optimum_commit: null
+  timm_version: null
+  timm_commit: null
+  peft_version: 0.14.0
+  peft_commit: null
+print_report: true
+log_report: true

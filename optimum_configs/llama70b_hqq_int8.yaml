@@ -1,0 +1,44 @@
+defaults:
+  - benchmark
+  - scenario: inference
+  - launcher: process
+  - backend: pytorch
+  - _base_
+  - _torch_compile_
+  - _self_
+
+name: llama70b_hqq_int8_torch_compile
+
+launcher:
+  device_isolation: true
+  device_isolation_action: warn
+
+backend:
+  quantization_scheme: hqq
+  quantization_config:
+    quant_config:
+      offload_meta: false
+      scale_quant_params: null,
+      weight_quant_params:
+        axis: 1
+        channel_wise: true
+        nbits: 8
+        group_size: 64
+        optimize: true
+        round_zero: true
+        view_as_float: false
+    skip_modules: ["lm_head"]
+  model: meta-llama/Llama-3.1-70B-Instruct
+  torch_dtype: bfloat16
+
+scenario:
+  memory: true
+  latency: true
+  input_shapes:
+    batch_size: 1
+    sequence_length: 64
+  generate_kwargs:
+    max_new_tokens: 64
+    min_new_tokens: 64
+    do_sample: false
+    num_beams: 1

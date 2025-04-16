@@ -1,0 +1,114 @@
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,584[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,584[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `4` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,584[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 4.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,585[0m][[34moptimum_benchmark.backends.pytorch.config[0m][[33mWARNING[0m] - `backend.quantization_scheme` is deprecated and will be removed in a future version. Please use `quantization_config.quant_method` instead.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,587[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:05,587[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:12,936[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [4] for process [2985122] and its children[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:12,936[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:12,958[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.6.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:13,365[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:13,366[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:13,367[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,624[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,624[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,624[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 2985122[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [4][0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 1 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,625[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:16,626[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:39:20,569[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Found process(es) [{2984440}] running on device(s) [4], other than the isolated process [2985431], the device isolation process [2985431] and their children [{2985528, 2985530, 2986042, 2985532, 2985534, 2985536, 2985538, 2985540, 2985542, 2985544, 2985546, 2985548, 2985550, 2985552, 2985808, 2985554, 2985811, 2985556, 2985558, 2985560, 2985562, 2985564, 2985566, 2985440, 2985442, 2985444, 2985446, 2985448, 2985450, 2985452, 2985454, 2985456, 2985458, 2985460, 2985333, 2985462}].[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:39:20,569[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Make sure no other process is running on the device(s) while benchmarking.[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:39:20,569[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Exiting device isolation process.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:33,796[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:33,796[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:33,796[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing AutoQuantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:33,797[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Sending traceback to main process[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:39:33,820[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:35,057[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:39:35,057[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Received traceback from isolated process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,026[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,026[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `4` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,026[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 4.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,026[0m][[34moptimum_benchmark.backends.pytorch.config[0m][[33mWARNING[0m] - `backend.quantization_scheme` is deprecated and will be removed in a future version. Please use `quantization_config.quant_method` instead.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,029[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:51,029[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:57,984[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [4] for process [2991339] and its children[0m
+[MAIN-PROCESS][[36m2025-04-04 03:44:57,984[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:44:58,006[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.6.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:44:58,527[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:44:58,527[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:44:58,529[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,235[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,235[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,236[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,236[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,236[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,236[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 2991339[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [4][0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 1 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:01,237[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:45:06,729[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Found process(es) [{2988320}] running on device(s) [4], other than the isolated process [2991339], the device isolation process [2991632] and their children [{2991744, 2991746, 2991748, 2991750, 2991752, 2991754, 2991756, 2991758, 2991760, 2991762, 2991764, 2991766, 2991768, 2991770, 2991643, 2991772, 2991645, 2991774, 2991647, 2991776, 2991649, 2991778, 2991651, 2991780, 2991653, 2991782, 2991655, 2991657, 2991659, 2991661, 2991663, 2991665, 2992189, 2992191, 2992193, 2992195, 2992197, 2992199, 2992201, 2992203, 2992205, 2992207, 2992209, 2992211, 2992217, 2992219, 2992221, 2991837, 2991839, 2992223, 2992225, 2992227, 2992229, 2992231, 2992233, 2991466, 2992235, 2992237, 2992239, 2992241, 2992243, 2992245, 2992247, 2992249, 2992251, 2992253, 2992255}].[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:45:06,730[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Make sure no other process is running on the device(s) while benchmarking.[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:45:06,730[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Exiting device isolation process.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:17,513[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:17,513[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:17,513[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing AutoQuantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:17,514[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Sending traceback to main process[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:45:17,536[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:45:18,757[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:45:18,757[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Received traceback from isolated process[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,224[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,224[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `4` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,224[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 4.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,224[0m][[34moptimum_benchmark.backends.pytorch.config[0m][[33mWARNING[0m] - `backend.quantization_scheme` is deprecated and will be removed in a future version. Please use `quantization_config.quant_method` instead.[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,227[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:02,227[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:09,506[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [4] for process [2993850] and its children[0m
+[MAIN-PROCESS][[36m2025-04-04 03:46:09,506[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:09,528[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.6.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:09,902[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:09,903[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:09,904[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,394[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,394[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,394[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 2993850[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [4][0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,395[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 1 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,396[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:11,396[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:46:17,988[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Found process(es) [{2988320}] running on device(s) [4], other than the isolated process [2994101], the device isolation process [2994101] and their children [{2994177, 2994179, 2994181, 2994183, 2994185, 2994187, 2994189, 2994701, 2994191, 2994703, 2994193, 2994706, 2994195, 2994197, 2993949, 2994209, 2994211, 2994339, 2994213, 2994215, 2994601, 2994217, 2994219, 2994221, 2994223, 2994225, 2994610, 2994227, 2994612, 2994229, 2994614, 2994231, 2994616, 2994233, 2994618, 2994235, 2994620, 2994237, 2994622, 2994239, 2994624, 2994241, 2994626, 2994243, 2994628, 2994245, 2994630, 2994247, 2994632, 2994770, 2994772, 2994269, 2994175}].[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:46:17,988[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Make sure no other process is running on the device(s) while benchmarking.[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-04-04 03:46:17,988[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Exiting device isolation process.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:27,616[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:27,616[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:27,616[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing AutoQuantization config[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:27,617[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading model with pretrained weights[0m
+[ISOLATED-PROCESS][[36m2025-04-04 03:46:27,617[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading QuantizationMethod.TORCHAO-quantized model[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:01:05,332[0m][[34maccelerate.utils.modeling[0m][[32mINFO[0m] - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:09,434[0m][[34maccelerate.big_modeling[0m][[33mWARNING[0m] - Some parameters are on the meta device because they were offloaded to the cpu.[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:10,019[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Enabling eval mode[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:10,022[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Using torch.compile on forward[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:10,023[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Cleaning up backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:10,032[0m][[34minference[0m][[32mINFO[0m] - 	+ Preparing inputs for backend pytorch[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:10,032[0m][[34minference[0m][[32mINFO[0m] - 	+ Warming up backend for Text Generation[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:23,999[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Sending traceback to main process[0m
+[ISOLATED-PROCESS][[36m2025-04-04 04:04:24,020[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-04-04 04:04:26,149[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-04-04 04:04:26,149[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Received traceback from isolated process[0m

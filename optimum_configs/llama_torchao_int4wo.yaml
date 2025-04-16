@@ -1,0 +1,33 @@
+defaults:
+  - benchmark
+  - scenario: inference
+  - launcher: process
+  - backend: pytorch
+  - _base_
+  - _self_
+
+name: llama_torchao_int4wo_compile
+
+launcher:
+  device_isolation: true
+  device_isolation_action: warn
+
+backend:
+  quantization_scheme: torchao
+  quantization_config:
+      quant_type: int4_weight_only
+      group_size: 128
+  model: meta-llama/Llama-3.1-8B-Instruct
+
+scenario:
+  memory: true
+  latency: true
+  input_shapes:
+    batch_size: 1
+    sequence_length: 64
+  generate_kwargs:
+    max_new_tokens: 64
+    min_new_tokens: 64
+    do_sample: false
+    num_beams: 1
+    cache_implementation: static

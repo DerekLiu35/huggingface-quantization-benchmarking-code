@@ -1,0 +1,66 @@
++ load_model:
+	+ memory:
+		+ max_ram: 5534.73 (MB)
+		+ max_global_vram: 9003.47 (MB)
+		+ max_process_vram: 8076.13 (MB)
+		+ max_reserved: 7562.33 (MB)
+		+ max_allocated: 7372.50 (MB)
+	+ latency:
+		+ count: 1
+		+ total: 11.754454 (s)
+		+ mean: 11.754454 (s)
+		+ p50: 11.754454 (s)
+		+ p90: 11.754454 (s)
+		+ p95: 11.754454 (s)
+		+ p99: 11.754454 (s)
+		+ stdev: 0.000000 (s)
+		+ stdev_: 0.00 (%)
++ prefill:
+	+ memory:
+		+ max_ram: 1449.19 (MB)
+		+ max_global_vram: 9045.41 (MB)
+		+ max_process_vram: 8118.08 (MB)
+		+ max_reserved: 7583.30 (MB)
+		+ max_allocated: 6809.91 (MB)
+	+ latency:
+		+ count: 10
+		+ total: 0.324474 (s)
+		+ mean: 0.032447 (s)
+		+ p50: 0.032435 (s)
+		+ p90: 0.032499 (s)
+		+ p95: 0.032510 (s)
+		+ p99: 0.032520 (s)
+		+ stdev: 0.000041 (s)
+		+ stdev_: 0.13 (%)
+	+ throughput:
+		+ throughput: 30.82 (samples/s)
++ decode:
+	+ memory:
+		+ max_ram: 1449.19 (MB)
+		+ max_global_vram: 9045.41 (MB)
+		+ max_process_vram: 8118.08 (MB)
+		+ max_reserved: 7583.30 (MB)
+		+ max_allocated: 6813.99 (MB)
+	+ latency:
+		+ count: 10
+		+ total: 14.620819 (s)
+		+ mean: 1.462082 (s)
+		+ p50: 1.457167 (s)
+		+ p90: 1.466042 (s)
+		+ p95: 1.484434 (s)
+		+ p99: 1.499148 (s)
+		+ stdev: 0.013743 (s)
+		+ stdev_: 0.94 (%)
+	+ throughput:
+		+ throughput: 43.09 (tokens/s)
++ per_token:
+	+ latency:
+		+ count: 3510
+		+ total: 81.988515 (s)
+		+ mean: 0.023359 (s)
+		+ p50: 0.023141 (s)
+		+ p90: 0.023411 (s)
+		+ p95: 0.023506 (s)
+		+ p99: 0.032724 (s)
+		+ stdev: 0.001610 (s)
+		+ stdev_: 6.89 (%)

@@ -1,0 +1,1072 @@
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,311[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,312[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `0` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,312[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 0.[0m
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,312[0m][[34moptimum_benchmark.backends.pytorch.config[0m][[33mWARNING[0m] - `backend.quantization_scheme` is deprecated and will be removed in a future version. Please use `quantization_config.quant_method` instead.[0m
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,315[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-03-16 03:51:58,315[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-03-16 03:52:08,141[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [0] for process [56240] and its children[0m
+[MAIN-PROCESS][[36m2025-03-16 03:52:08,141[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:08,164[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.6.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:08,580[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:08,580[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:08,583[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,130[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,130[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,131[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,131[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,131[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,131[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,131[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 56240[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [0][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 1 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:10,132[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:34,417[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:34,418[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:34,420[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing AutoQuantization config[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:34,420[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading model with pretrained weights[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:52:34,420[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading QuantizationMethod.GPTQ-quantized model[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-16 03:52:55,255[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Found process(es) [{57720}] running on device(s) [0], other than the isolated process [56558], the device isolation process [56558] and their children [{57601, 57603, 57605, 57607, 57609, 57611, 57613, 57615, 57617, 57619, 57621, 57623, 57625, 57627, 57629, 57631, 57633, 57635, 57637, 57639, 56360, 57641, 57643, 57645, 56630, 56632, 56634, 56636, 56894, 56638, 56640, 56642, 56643, 56645, 56648, 56650, 56652, 57426, 56664, 56666, 56668, 56670, 56672, 56674, 56676, 56678, 56680, 56682, 56685, 56687, 56689, 56691, 56693, 56695, 56697, 56699, 56701, 56703, 57251, 57253, 57255, 57257, 57259, 57261, 57263, 57264, 57265, 57009, 56754, 57268, 57011, 57013, 57271, 57015, 57273, 57017, 57275, 57019, 57277, 57021, 57279, 57022, 57281, 57024, 57283, 57027, 57285, 57029, 57287, 57031, 57289, 57033, 57291, 57035, 57293, 57037, 57295, 57039, 57297, 57041, 57299, 57043, 57301, 57045, 57303, 57047, 57305, 57049, 57307, 57051, 57309, 57053, 57311, 57055, 57313, 57057, 57059, 57593, 57061, 57063, 57065, 57322, 57067, 57069, 57583, 57071, 57585, 57587, 57589, 57591, 57081, 57595, 57596, 57597}].[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-16 03:52:55,255[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Make sure no other process is running on the device(s) while benchmarking.[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-16 03:52:55,256[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Exiting device isolation process.[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:46,222[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 1/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:46,223[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:49,582[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:52,064[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4823482036590576[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:52,071[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1697.386962890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:54,644[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:57,163[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.517962694168091[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:57,163[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 863.8922119140625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:53:59,687[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:02,159[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.472461700439453[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:02,160[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 15.407255172729492[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:04,709[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:06,688[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9783697128295898[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:06,689[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 0.511350154876709[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:09,702[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:12,638[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.868036985397339[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:12,639[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 665.3017578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:14,845[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:17,672[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4866373538970947[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:17,672[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 538.3212890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:30,681[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 1/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:39,225[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.543779850006104[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:39,225[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2.7687573432922363[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:45,349[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 2/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:45,349[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:47,565[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:50,203[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6381638050079346[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:50,204[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1577.557861328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:52,517[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:55,011[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4932339191436768[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:55,011[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 915.187255859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:54:57,558[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:00,046[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4880709648132324[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:00,047[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 50.215660095214844[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:02,567[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:04,542[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9739699363708496[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:04,542[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1.8663944005966187[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:07,506[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:09,654[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1474671363830566[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:09,654[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1267.7322998046875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:12,497[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:14,769[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2723026275634766[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:14,770[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1067.04541015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:27,299[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 2/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:36,711[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.411463499069214[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:36,712[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 16.079069137573242[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:41,828[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 3/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:41,828[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:44,056[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:45,995[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9379713535308838[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:45,995[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6646.4453125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:48,475[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:50,812[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3372888565063477[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:50,813[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4149.23876953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:53,740[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:55,973[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.233304738998413[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:55,974[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 196.55743408203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:55:58,617[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:00,562[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9440901279449463[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:00,563[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2.2188243865966797[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:03,026[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:05,769[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.7424988746643066[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:05,770[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2349.383056640625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:08,185[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:10,883[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6972875595092773[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:10,883[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1864.83642578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:23,041[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 3/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:31,212[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.170525550842285[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:31,212[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 13.071453094482422[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:36,467[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 4/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:36,467[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:38,688[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:40,665[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9767744541168213[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:40,666[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5469.13916015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:43,628[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:45,582[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.953040361404419[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:45,582[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3046.115234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:48,666[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:50,590[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9230258464813232[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:50,590[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 272.6431579589844[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:53,664[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:55,597[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9323928356170654[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:55,598[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5.969948768615723[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:56:58,715[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:01,095[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3797757625579834[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:01,096[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3723.5205078125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:03,792[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:05,851[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.058608293533325[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:05,852[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2592.37255859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:18,667[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 4/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:27,008[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.340213298797607[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:27,008[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 23.419986724853516[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:32,546[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 5/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:32,546[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:34,778[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:36,725[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9468207359313965[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:36,726[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5021.77978515625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:39,840[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:41,866[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0251214504241943[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:41,866[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2862.33349609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:44,959[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:47,609[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6493632793426514[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:47,610[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 275.8714599609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:49,919[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:51,850[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9307622909545898[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:51,851[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8.749839782714844[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:54,867[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:57,028[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.160989761352539[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:57:57,029[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5379.400390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:00,109[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:02,114[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0044591426849365[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:02,115[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3290.769287109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:14,979[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 5/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:23,475[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.49580454826355[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:23,476[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 38.54120635986328[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:29,589[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 6/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:29,589[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:31,816[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:33,753[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9373805522918701[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:33,754[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7354.296875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:36,795[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:39,339[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5439600944519043[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:39,339[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4438.162109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:41,900[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:44,118[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2169687747955322[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:44,118[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 274.87548828125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:46,881[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:48,812[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9299626350402832[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:48,813[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 10.170408248901367[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:51,810[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:53,920[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1097326278686523[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:53,921[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6326.84033203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:56,943[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:58,957[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.013949394226074[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:58:58,958[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3913.8681640625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:11,773[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 6/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:20,114[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.340693235397339[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:20,115[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 49.64483642578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:25,535[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 7/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:25,535[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:27,767[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:29,714[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9465456008911133[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:29,715[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6522.20068359375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:32,792[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:34,781[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9876866340637207[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:34,781[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3651.3125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:37,936[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:39,860[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9236562252044678[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:39,861[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 302.4876708984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:42,997[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:44,932[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9348764419555664[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:44,933[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 14.487127304077148[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:48,029[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:50,013[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9842236042022705[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:50,014[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6941.978515625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:53,046[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:55,096[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.049980401992798[0m
+[ISOLATED-PROCESS][[36m2025-03-16 03:59:55,097[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4245.15625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:07,969[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 7/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:16,284[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.31421160697937[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:16,284[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 60.64851379394531[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:21,808[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 8/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:21,808[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:24,042[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:26,001[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9582931995391846[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:26,001[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6082.61279296875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:28,242[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:30,691[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.449514150619507[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:30,692[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3664.610107421875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:33,248[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:35,338[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.089282751083374[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:35,338[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 304.4678955078125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:38,583[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:40,549[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.965630054473877[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:40,550[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 18.596630096435547[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:43,588[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:46,437[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.849137544631958[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:46,438[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6627.92822265625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:48,806[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:50,752[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.946352481842041[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:00:50,753[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4336.5537109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:03,596[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 8/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:12,109[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.51293683052063[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:12,109[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 64.75218200683594[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:17,416[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 9/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:17,416[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:19,655[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:21,599[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.94350266456604[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:21,599[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7343.05859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:24,626[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:26,610[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9835851192474365[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:26,611[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4481.6171875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:29,737[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:31,737[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9997000694274902[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:31,738[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 383.76739501953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:34,856[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:37,064[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2077057361602783[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:37,065[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 22.959598541259766[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:39,840[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:42,335[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4941563606262207[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:42,336[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6748.0087890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:45,339[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:48,471[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 3.131375789642334[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:01:48,472[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4350.4521484375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:01,453[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 9/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:10,117[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.663343667984009[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:10,117[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 64.59251403808594[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:15,469[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 10/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:15,469[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:17,712[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:20,290[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.578190565109253[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:20,291[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7051.19970703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:22,861[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:25,226[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3648924827575684[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:25,227[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4170.95458984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:27,771[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:30,170[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3990349769592285[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:30,171[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 517.3983764648438[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:32,705[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:34,708[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0027782917022705[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:34,708[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 21.20806121826172[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:37,740[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:40,301[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5605127811431885[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:40,302[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6928.5556640625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:42,911[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:44,943[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0311903953552246[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:44,944[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4454.5400390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:02:57,776[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 10/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:06,720[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.943946838378906[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:06,721[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 65.5743637084961[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:12,836[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 11/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:12,837[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:15,073[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:17,013[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.940330982208252[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:17,014[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8292.84375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:20,023[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:22,808[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.78475284576416[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:22,808[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5080.1240234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:25,356[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:27,836[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4799580574035645[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:27,836[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 417.2023620605469[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:30,387[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:32,344[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9568450450897217[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:32,346[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 25.827795028686523[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:35,496[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:37,697[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2008612155914307[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:37,698[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6440.6240234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:40,846[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:42,973[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1259963512420654[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:42,974[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4441.71630859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:03:56,950[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 11/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:05,706[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.756155729293823[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:05,707[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 65.59520721435547[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:10,882[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 12/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:10,882[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:13,120[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:15,108[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.986952543258667[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:15,109[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6920.6044921875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:18,217[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:20,304[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0865113735198975[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:20,305[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4424.40283203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:23,378[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:25,394[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0155341625213623[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:25,395[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 399.2657470703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:28,422[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:30,451[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0292277336120605[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:30,452[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 29.461658477783203[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:33,619[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:36,244[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6243836879730225[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:36,245[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6434.88671875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:38,803[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:41,549[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.746265411376953[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:41,550[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4585.4609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:04:53,640[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 12/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:02,109[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.469040155410767[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:02,110[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 69.76426696777344[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:07,676[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 13/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:07,676[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:09,919[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:12,099[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1797518730163574[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:12,100[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5854.3134765625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:15,488[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:17,679[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.19077205657959[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:17,680[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3315.027587890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:21,106[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:23,289[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.182354211807251[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:23,290[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 453.30810546875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:26,717[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:28,662[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.94443678855896[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:28,663[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 45.72578430175781[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:30,956[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:33,297[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3407673835754395[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:33,298[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6297.49072265625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:36,678[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:38,956[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2781553268432617[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:38,957[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4751.1533203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:05:52,195[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 13/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:01,065[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.870139360427856[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:01,066[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 81.70751953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:06,843[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 14/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:06,843[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:09,083[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:11,043[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9603760242462158[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:11,044[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8133.11767578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:14,118[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:16,100[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9815552234649658[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:16,101[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5303.2392578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:19,184[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:21,111[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.926941156387329[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:21,112[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 527.8952026367188[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:24,143[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:26,163[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.019304037094116[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:26,164[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 43.44355010986328[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:29,353[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:31,920[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5666377544403076[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:31,921[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6542.80078125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:34,467[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:36,611[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1436023712158203[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:36,612[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4918.0458984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:49,520[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 14/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:57,934[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.413225650787354[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:06:57,934[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 86.85118103027344[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:03,380[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 15/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:03,380[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:05,621[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:07,583[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9616026878356934[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:07,584[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7714.7490234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:10,648[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:13,137[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.487813711166382[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:13,138[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5188.7822265625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:15,712[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:18,786[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 3.0738685131073[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:18,787[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 516.0313720703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:22,104[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:24,055[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9505386352539062[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:24,056[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 49.908138275146484[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:26,271[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:28,632[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.360990524291992[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:28,633[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7573.1845703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:32,240[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:34,705[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4647040367126465[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:34,706[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5315.203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:46,923[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 15/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:55,639[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.715454578399658[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:07:55,640[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 111.1223373413086[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:02,819[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 16/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:02,819[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:05,071[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:07,018[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9471845626831055[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:07,019[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8822.5546875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:09,591[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:11,845[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2539350986480713[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:11,846[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4611.7568359375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:15,255[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:17,522[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.266597032546997[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:17,523[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 604.5784912109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:20,935[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:23,180[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.243978500366211[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:23,181[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 80.16368865966797[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:26,212[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:29,831[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 3.618856191635132[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:29,832[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8457.96484375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:32,379[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:34,774[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.394688129425049[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:34,775[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5648.716796875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:48,019[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 16/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:56,891[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.871692180633545[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:08:56,892[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 132.87466430664062[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:03,597[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 17/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:03,598[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:05,867[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:08,140[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.272908926010132[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:08,141[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7979.5849609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:11,193[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:13,871[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.676992416381836[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:13,872[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4647.005859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:17,350[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:19,746[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.395707130432129[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:19,747[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 534.3968505859375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:22,005[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:23,977[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.972407579421997[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:23,978[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 59.319854736328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:26,437[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:29,126[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.689309597015381[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:29,127[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 9523.111328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:32,585[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:35,082[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4961202144622803[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:35,083[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6032.0986328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:48,432[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 17/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:57,535[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.102823972702026[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:09:57,536[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 153.18919372558594[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:03,792[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 18/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:03,792[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:06,066[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:08,001[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9347517490386963[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:08,002[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8293.3525390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:11,426[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:14,376[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.9497363567352295[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:14,377[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4887.13671875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:17,439[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:19,876[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.43599534034729[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:19,877[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 603.4658203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:24,616[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:26,644[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0271849632263184[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:26,645[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 58.00614929199219[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:29,230[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:31,649[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4185264110565186[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:31,650[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 10363.25390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:34,314[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:37,590[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 3.2749719619750977[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:37,591[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6406.990234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:10:51,079[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 18/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:00,448[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.368724584579468[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:00,449[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 180.17495727539062[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:07,130[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 19/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:07,130[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:09,411[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:11,836[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4250712394714355[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:11,837[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8308.6650390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:14,163[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:16,473[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.309828758239746[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:16,473[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5337.83837890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:19,083[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:21,876[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.792217254638672[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:21,876[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 593.67529296875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:24,148[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:26,110[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9614381790161133[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:26,111[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 42.08885192871094[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:29,037[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:31,720[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.682133436203003[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:31,721[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 10687.873046875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:33,989[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:36,675[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6856038570404053[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:36,675[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6575.45654296875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:48,935[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 19/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:57,360[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.424191951751709[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:11:57,360[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 180.93508911132812[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:04,821[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 20/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:04,821[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:07,100[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:09,324[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2234747409820557[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:09,324[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8299.947265625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:11,722[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:14,131[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4081640243530273[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:14,131[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4779.583984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:17,690[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:20,322[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6317758560180664[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:20,323[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 638.354736328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:23,416[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:25,790[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3740999698638916[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:25,791[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 48.51533508300781[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:28,485[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:31,104[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6183836460113525[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:31,104[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 11236.654296875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:34,569[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:37,015[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4458210468292236[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:37,016[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 6805.3720703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:49,266[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 20/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:58,410[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.144350290298462[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:12:58,411[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 198.08917236328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:06,007[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 21/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:06,007[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:08,279[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:10,619[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3391976356506348[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:10,619[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8590.869140625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:12,892[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:15,255[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3631105422973633[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:15,256[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5222.1259765625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:18,875[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:21,184[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3084869384765625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:21,185[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 709.8251953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:23,446[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:25,399[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9523916244506836[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:25,400[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 51.2274169921875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:27,988[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:30,596[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.607792854309082[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:30,597[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 12059.3818359375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:34,187[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:36,557[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.369316816329956[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:36,557[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7373.6103515625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:50,180[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 21/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:59,146[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 8.96571683883667[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:13:59,147[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 215.15013122558594[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:05,328[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 22/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:05,329[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:07,606[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:09,552[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.946556568145752[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:09,553[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8282.537109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:12,193[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:14,627[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.433741807937622[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:14,628[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4967.76025390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:16,988[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:19,657[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6692254543304443[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:19,658[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 746.4171142578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:22,032[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:24,278[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.2462949752807617[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:24,279[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 74.90229797363281[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:27,049[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:29,993[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.943462610244751[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:29,994[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 12789.26171875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:32,246[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:34,908[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6618824005126953[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:34,909[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7759.40673828125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:47,152[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 22/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:56,351[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.198406219482422[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:14:56,351[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 243.60601806640625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:03,000[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 23/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:03,001[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:05,304[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:07,643[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3385472297668457[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:07,644[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8446.91015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:09,950[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:12,305[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3545215129852295[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:12,305[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5336.26220703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:15,890[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:18,086[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.1957743167877197[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:18,087[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 870.97265625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:20,547[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:22,503[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9562783241271973[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:22,504[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 78.47493743896484[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:25,166[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:27,628[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4621670246124268[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:27,629[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 13097.4638671875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:29,873[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:32,220[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.346774101257324[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:32,221[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8031.2685546875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:45,711[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 23/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:54,966[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.253750801086426[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:15:54,966[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 234.46510314941406[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:01,155[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 24/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:01,156[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:03,443[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:05,413[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9694416522979736[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:05,414[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8336.1796875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:07,945[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:10,347[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4019103050231934[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:10,348[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5059.625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:12,616[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:14,973[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.356644868850708[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:14,973[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 920.05224609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:17,235[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:19,604[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.368835687637329[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:19,605[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 72.7211685180664[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:21,871[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:24,368[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.496565103530884[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:24,369[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 13459.1240234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:26,619[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:29,003[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3829574584960938[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:29,004[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8288.228515625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:41,239[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 24/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:50,604[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.363862037658691[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:50,604[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 239.03369140625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:58,116[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 25/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:16:58,117[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:00,391[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:02,701[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.309471368789673[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:02,702[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8287.025390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:04,974[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:07,317[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3420259952545166[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:07,318[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4802.7470703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:09,593[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:11,978[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.383988380432129[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:11,978[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1159.355224609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:14,244[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:16,191[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.946674108505249[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:16,192[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 87.04779052734375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:18,808[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:21,403[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5945327281951904[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:21,404[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 14150.974609375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:23,653[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:26,039[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3854944705963135[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:26,045[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8719.32421875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:39,572[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 25/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:48,986[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.413626432418823[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:48,987[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 259.74871826171875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:55,245[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 26/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:55,246[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:57,527[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:59,532[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0051326751708984[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:17:59,533[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8192.4189453125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:02,124[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:04,574[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4495110511779785[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:04,575[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4540.994140625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:08,216[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:10,600[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3838841915130615[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:10,601[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1202.32666015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:12,877[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:15,202[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.324706792831421[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:15,203[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 117.43033599853516[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:17,468[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:19,995[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.52593731880188[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:19,996[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 14552.234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:23,533[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:26,010[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.477156639099121[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:26,011[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8978.076171875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:39,538[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 26/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:49,414[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.875659465789795[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:49,414[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 279.8717346191406[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:56,554[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 27/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:56,555[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:18:58,834[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:01,204[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.370579719543457[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:01,205[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8048.76806640625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:03,677[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:05,661[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9832792282104492[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:05,662[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4940.63623046875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:09,209[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:11,632[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4218051433563232[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:11,632[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1148.1458740234375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:14,739[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:16,701[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9619975090026855[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:16,702[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 110.47985076904297[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:19,868[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:22,310[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4422240257263184[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:22,311[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 15917.658203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:24,563[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:27,174[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6103270053863525[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:27,175[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 9790.787109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:40,750[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 27/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:50,025[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.274860382080078[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:50,026[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 341.59185791015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:56,298[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 28/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:56,298[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:19:58,576[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:00,593[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0162973403930664[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:00,594[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8323.8291015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:03,087[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:05,538[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4506707191467285[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:05,539[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5247.64794921875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:07,801[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:10,122[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3211638927459717[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:10,123[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1615.051513671875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:12,421[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:14,829[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4078714847564697[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:14,830[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 170.1586456298828[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:17,095[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:19,944[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.8484301567077637[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:19,945[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 16745.341796875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:23,055[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:25,680[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.6252100467681885[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:25,681[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 10376.69921875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:39,127[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 28/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:49,614[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 10.48642873764038[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:49,614[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 413.802001953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:55,929[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 29/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:55,929[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:20:58,205[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:00,583[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.377782106399536[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:00,584[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7592.025390625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:02,860[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:05,224[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3642783164978027[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:05,225[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4313.80810546875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:08,722[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:11,185[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4621429443359375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:11,185[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1439.0260009765625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:14,692[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:16,631[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9379956722259521[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:16,631[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 234.66282653808594[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:19,110[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:21,541[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4312009811401367[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:21,542[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 17822.48828125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:23,786[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:26,135[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3491761684417725[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:26,136[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 11536.4482421875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:38,332[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 29/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:47,622[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.289577960968018[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:47,623[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 549.635009765625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:55,102[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 30/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:55,103[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:57,377[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:59,379[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.000948905944824[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:21:59,380[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 8002.85791015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:01,957[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:04,425[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.467482089996338[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:04,426[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4505.95703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:07,974[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:10,453[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.47796368598938[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:10,454[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1697.9967041015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:14,071[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:16,095[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0237765312194824[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:16,096[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 245.52105712890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:18,736[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:21,253[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5169966220855713[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:21,254[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 18089.6328125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:23,494[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:25,934[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.440247058868408[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:25,935[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 12256.92578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:38,981[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 30/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:48,332[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.351099729537964[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:48,333[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 837.2310791015625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:54,921[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 31/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:54,921[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:57,193[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:59,562[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3685522079467773[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:22:59,563[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 7517.9462890625[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:03,150[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:05,174[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.0234241485595703[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:05,175[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 4451.01708984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:07,794[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:10,232[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.4381842613220215[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:10,233[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 2410.7626953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:13,807[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:15,828[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.020038366317749[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:15,829[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 512.283203125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:18,529[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:21,067[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.537665605545044[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:21,068[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 19626.333984375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:24,566[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:27,116[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.5499584674835205[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:27,117[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 12999.912109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:40,630[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 31/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:49,994[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.36313009262085[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:49,994[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1915.0048828125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:56,254[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Start quantizing block model.layers 32/32[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:56,254[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Module to quantize [['self_attn.q_proj'], ['self_attn.k_proj'], ['self_attn.v_proj'], ['self_attn.o_proj'], ['mlp.gate_proj'], ['mlp.up_proj'], ['mlp.down_proj']][0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:23:58,525[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.q_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:00,477[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9508016109466553[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:00,478[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 5871.53125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:03,014[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.k_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:05,387[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3727328777313232[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:05,388[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 3079.97412109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:07,642[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.v_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:09,935[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.292691230773926[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:09,936[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1366.7001953125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:12,201[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing self_attn.o_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:14,188[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 1.9865655899047852[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:14,189[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 1299.912109375[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:16,747[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.gate_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:19,371[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.623734951019287[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:19,372[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 18250.94921875[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:21,621[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.up_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:24,001[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 2.3802273273468018[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:24,002[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 12614.42578125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:36,233[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Quantizing mlp.down_proj in block 32/32...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:46,071[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - duration: 9.837438583374023[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:46,072[0m][[34mauto_gptq.quantization.gptq[0m][[32mINFO[0m] - avg loss: 10229.095703125[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:24:53,099[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Packing model...[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:01,564[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:01,869[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:02,678[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:03,441[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:03,690[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:06,170[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:07,908[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.0.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:09,623[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:09,868[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:10,516[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:11,173[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:11,427[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:13,952[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:15,793[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.1.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:17,500[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:17,740[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:18,388[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:19,051[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:19,301[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:21,688[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:23,439[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.2.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:25,176[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:25,423[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:26,075[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:26,738[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:26,989[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:29,334[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:31,110[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.3.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:32,826[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:33,072[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:33,726[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:34,385[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:34,639[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:36,968[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:38,943[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.4.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:40,716[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:41,156[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:41,807[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:42,469[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:42,718[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:45,043[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:46,754[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.5.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:48,467[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:48,713[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:49,361[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:50,018[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:50,269[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:52,617[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:54,418[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.6.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:56,169[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:56,417[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:57,075[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:57,737[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:25:57,991[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:00,343[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:02,145[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.7.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:03,912[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:04,157[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:04,834[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:05,504[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:05,756[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:08,306[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:10,064[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.8.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:11,889[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:12,136[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:12,796[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:13,457[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:13,711[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:16,073[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:17,871[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.9.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:19,575[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:19,851[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:20,529[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:21,194[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:21,471[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:23,783[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:25,497[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.10.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:27,196[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:27,445[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:28,089[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:28,753[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:29,004[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:31,688[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:33,398[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.11.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:35,094[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:35,338[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:35,984[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:36,638[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:36,883[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:39,230[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:40,927[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.12.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:42,629[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:42,878[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:43,521[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:44,181[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:44,430[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:46,809[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:48,507[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.13.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:50,219[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:50,460[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:51,103[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:51,760[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:52,009[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:54,323[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:56,028[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.14.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:57,725[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:57,965[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:58,810[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:59,466[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:26:59,715[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:02,083[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:03,807[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.15.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:05,583[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:05,824[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:06,485[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:07,144[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:07,392[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:09,703[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:11,422[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.16.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:13,126[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:13,363[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:14,015[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:14,674[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:14,922[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:17,245[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:18,955[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.17.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:20,663[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:20,904[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:21,555[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:22,210[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:22,655[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:24,977[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:26,692[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.18.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:28,411[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:28,651[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:29,300[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:29,957[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:30,209[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:32,532[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:34,258[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.19.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:35,972[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:36,219[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:36,864[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:37,570[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:37,820[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:40,211[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:41,930[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.20.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:43,633[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:43,876[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:44,520[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:45,203[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:45,648[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:47,963[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:49,665[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.21.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:51,387[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:51,629[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:52,274[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:52,931[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:53,185[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:55,503[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:57,567[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.22.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:59,297[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:27:59,539[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:00,180[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:00,838[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:01,090[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:03,424[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:05,279[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.23.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:07,137[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:07,379[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:08,032[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:08,729[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:08,974[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:11,343[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:13,162[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.24.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:15,118[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:15,439[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:16,180[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:16,935[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:17,192[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:19,911[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:21,911[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.25.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:23,916[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:24,169[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:24,905[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:25,651[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:25,902[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:28,598[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:30,553[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.26.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:32,467[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:32,781[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:33,417[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:34,062[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:34,380[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:36,875[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:38,564[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.27.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:40,546[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:40,792[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:41,516[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:42,254[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:42,506[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:45,224[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:47,195[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.28.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:49,166[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:49,413[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:50,143[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:50,869[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:51,162[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:53,935[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:55,740[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.29.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:57,426[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:57,713[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:58,350[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:58,999[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:28:59,254[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:01,701[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:03,402[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.30.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:05,106[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.self_attn.k_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:05,358[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.self_attn.o_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:06,001[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.self_attn.q_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:06,654[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.self_attn.v_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:06,910[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.mlp.down_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:09,442[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.mlp.gate_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:11,126[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - model.layers.31.mlp.up_proj[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:12,818[0m][[34moptimum.gptq.quantizer[0m][[32mINFO[0m] - Model packed.[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:14,103[0m][[34mgemlite.core[0m][[33mWARNING[0m] - Loaded /home/derek_liu/benchmark/lib/python3.11/site-packages/gemlite/configs/a100.json config.[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:16,012[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Enabling eval mode[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:16,014[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Cleaning up backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:16,340[0m][[34minference[0m][[32mINFO[0m] - 	+ Preparing inputs for backend pytorch[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:16,340[0m][[34minference[0m][[32mINFO[0m] - 	+ Warming up backend for Text Generation[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:20,996[0m][[34minference[0m][[32mINFO[0m] - 	+ Running Per-Token Text Generation latency tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:29:44,384[0m][[34minference[0m][[32mINFO[0m] - 	+ Running Text Generation memory tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:30:31,619[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Sending report to main process[0m
+[ISOLATED-PROCESS][[36m2025-03-16 04:30:31,623[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,565[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,566[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Received report from isolated process[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,576[0m][[34mreport[0m][[32mINFO[0m] - + load_model:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,576[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,576[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 17437.75 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,576[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 37834.78 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 28510.78 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 27940.36 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 25673.80 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 1[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,577[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 2201.577750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.000000 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 0.00 (%)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - + prefill:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 4474.22 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 12392.01 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 11465.13 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 10894.70 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 4002.36 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,578[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 10[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 1.833756 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 0.183376 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 0.183086 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 0.184733 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 0.184809 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 0.184870 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.000733 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 0.40 (%)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 	+ throughput:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - 		+ throughput: 5.45 (samples/s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,579[0m][[34mreport[0m][[32mINFO[0m] - + decode:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 4474.22 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 12392.01 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 11465.13 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 10894.70 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 4004.51 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 10[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 21.532750 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 2.153275 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 2.151381 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,580[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 2.166166 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 2.180162 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 2.191359 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.015840 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 0.74 (%)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 	+ throughput:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ throughput: 29.26 (tokens/s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - + per_token:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 3510[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 126.442121 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 0.036023 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,581[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 0.034018 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,582[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 0.034814 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,582[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 0.035140 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,582[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 0.183511 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,582[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.016876 (s)[0m
+[MAIN-PROCESS][[36m2025-03-16 04:30:34,582[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 46.85 (%)[0m

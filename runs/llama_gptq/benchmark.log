@@ -1,0 +1,149 @@
+[MAIN-PROCESS][[36m2025-03-09 04:14:59,561[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:00,202[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `0,1,2,3,4` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:00,202[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 0,1,2,3,4.[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:00,204[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:00,204[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:06,886[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [0,1,2,3,4] for process [4153059] and its children[0m
+[MAIN-PROCESS][[36m2025-03-09 04:15:06,887[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:06,908[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.4.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:07,898[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:07,898[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:07,900[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,023[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,023[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,024[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,024[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,024[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,024[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,025[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,025[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,025[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 4153059[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:09,025[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [0, 1, 2, 3, 4][0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,711[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 5 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,711[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,734[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,734[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 0: Invalid device argument [0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,735[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 1: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,735[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 2: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,735[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 3: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:10,735[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 4: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:27,343[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:27,343[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:27,344[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing GPTQ config[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:27,344[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading model with pretrained weights[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:27,345[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Loading QuantizationMethod.GPTQ-quantized model[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:40,622[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Enabling eval mode[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:40,623[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Cleaning up backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:40,631[0m][[34minference[0m][[32mINFO[0m] - 	+ Preparing inputs for backend pytorch[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:40,632[0m][[34minference[0m][[32mINFO[0m] - 	+ Warming up backend for Text Generation[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:15:46,997[0m][[34minference[0m][[32mINFO[0m] - 	+ Running Per-Token Text Generation latency tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:16:01,759[0m][[34minference[0m][[32mINFO[0m] - 	+ Running Text Generation memory tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:16:30,865[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Sending report to main process[0m
+[ISOLATED-PROCESS][[36m2025-03-09 04:16:30,869[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:31,993[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,020[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Received report from isolated process[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - + load_model:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 5874.72 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 13888.26 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 6459.23 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 5909.77 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 5909.01 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 1[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,030[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 13.280127 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.000000 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 0.00 (%)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - + prefill:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 1530.91 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 13921.81 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,031[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 6492.78 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 5953.81 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 5933.56 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 10[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 0.331924 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 0.033192 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 0.033178 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 0.033275 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 0.033302 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 0.033324 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,032[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.000064 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 0.19 (%)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 	+ throughput:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ throughput: 30.13 (samples/s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - + decode:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 	+ memory:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_ram: 1530.91 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_global_vram: 13921.81 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_process_vram: 6492.78 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_reserved: 5953.81 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ max_allocated: 5938.16 (MB)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,033[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 10[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 14.414724 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 1.441472 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 1.435685 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 1.449506 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 1.468836 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 1.484300 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.016009 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 1.11 (%)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 	+ throughput:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 		+ throughput: 43.71 (tokens/s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - + per_token:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,034[0m][[34mreport[0m][[32mINFO[0m] - 	+ latency:[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ count: 3510[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ total: 80.914947 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ mean: 0.023053 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ p50: 0.022773 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ p90: 0.023176 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ p95: 0.023554 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ p99: 0.033489 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev: 0.001990 (s)[0m
+[MAIN-PROCESS][[36m2025-03-09 04:16:32,035[0m][[34mreport[0m][[32mINFO[0m] - 		+ stdev_: 8.63 (%)[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:13,148[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` was not specified, using all available GPUs.[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:13,434[0m][[34mbackend[0m][[33mWARNING[0m] - `device_ids` is now set to `0,1,2,3,4` based on system configuration.[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:13,434[0m][[34mbackend[0m][[32mINFO[0m] - CUDA_VISIBLE_DEVICES was set to 0,1,2,3,4.[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:13,437[0m][[34mprocess[0m][[32mINFO[0m] - Allocated process launcher[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:13,437[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Setting multiprocessing start method to spawn[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:20,184[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Isolating device(s) [0,1,2,3,4] for process [1661984] and its children[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:20,184[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Executing action [warn] in case of violation[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:20,211[0m][[34mdatasets[0m][[32mINFO[0m] - PyTorch version 2.4.0 available.[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:21,272[0m][[34mpytorch[0m][[32mINFO[0m] - Allocating pytorch backend[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:21,272[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Seeding backend with 42[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:21,275[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Benchmarking a Transformers model[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,506[0m][[34minference[0m][[32mINFO[0m] - Allocating inference scenario[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,506[0m][[34minference[0m][[32mINFO[0m] - 	+ Updating Text Generation kwargs with default values[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,507[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Text Generation report[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,507[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,507[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,507[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Per-Token Latency tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,508[0m][[34mlatency[0m][[32mINFO[0m] - 		+ Tracking latency using Pytorch CUDA events[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,508[0m][[34minference[0m][[32mINFO[0m] - 	+ Initializing Memory tracker[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,508[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking RAM memory of process 1661984[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:22,508[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking GPU memory of devices [0, 1, 2, 3, 4][0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,867[0m][[34mmemory[0m][[32mINFO[0m] - 		+ Tracking Allocated/Reserved memory of 5 Pytorch CUDA devices[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,867[0m][[34minference[0m][[32mINFO[0m] - 	+ Generating inputs for task text-generation[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,895[0m][[34minference[0m][[32mINFO[0m] - 	+ Running model loading tracking[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,897[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 0: Invalid device argument [0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,898[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 1: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,898[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 2: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,898[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 3: Invalid device argument : did you call init?[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:23,898[0m][[34mmemory[0m][[33mWARNING[0m] - 		+ Could not reset max memory stats for device 4: Invalid device argument : did you call init?[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-10 21:06:27,906[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Found process(es) [{1570531, 1661245}] running on device(s) [0,1,2,3,4], other than the isolated process [1662221], the device isolation process [1662221] and their children [{1662459}].[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-10 21:06:27,907[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Make sure no other process is running on the device(s) while benchmarking.[0m
+[DEVICE-ISOLATION-PROCESS][[36m2025-03-10 21:06:27,907[0m][[34mdevice-isolation[0m][[33mWARNING[0m] - Exiting device isolation process.[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:41,510[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Creating backend temporary directory[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:41,511[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing quantization config[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:41,511[0m][[34mpytorch[0m][[32mINFO[0m] - 	+ Processing AWQ config[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:41,511[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Sending traceback to main process[0m
+[ISOLATED-PROCESS][[36m2025-03-10 21:06:41,535[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Exiting isolated process[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:43,403[0m][[34mprocess[0m][[32mINFO[0m] - 	+ Stopping device isolation process[0m
+[MAIN-PROCESS][[36m2025-03-10 21:06:43,403[0m][[34mprocess[0m][[31mERROR[0m] - 	+ Received traceback from isolated process[0m
